@@ -1,0 +1,16 @@
+class 类名（大驼峰命名）:
+	def __init__(self):
+		自定义属性的初始值
+	
+	def __str__(self):
+		return 返回内容
+
+# 定义对象 对象名 = 所在类名()
+# 调用对象
+
+
+
+
+pip3 install pyinstaller 安装程序打包程序
+pyinstaller -V  查看是否安装完成
+pyinstaller -w .py 打包
