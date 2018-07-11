@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>index</title> 
+<script type="text/javascript">
+//九九乘法表 重复的代码用循环
+var str = "";
+str +="<table width=600 border=1 rules=all align=center>";
+for(var i=1;i<=9;i++)
+{
+	str +="	<tr>";
+	/*
+	第1行（i=1)1个单元格（j<=1）单元格循环1次（j<=9）
+	第2行（i=2)2个单元格（j<=2）单元格循环2次（j<=9）
+	第3行（i=3）3个单元格（j<=3）单元格循环3次（j<=9）
+	.......
+	得出 T型 表格的 j<=i
+	*/
+	for(var j=1;j<=i;j++)
+	{
+	str +="		<td>"+j+"&times;"+i+"="+i*j+"</td>";//变量里面用双引号"+字符串+" 字符不用
+	}
+	str +="	</tr>";
+}
+str +="</table>";
+
+
+
+
+
+document.write(str);
+</script>
+ </head>
+
+ <body>
+  
+ </body>
+</html>

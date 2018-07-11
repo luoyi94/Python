@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS</title>
+<style type="text/css">
+h1{
+	color:#06F;/*文本颜色*/
+	text-align:center;/*对齐方式*/
+	border:1px solid #0F3;/*边框样式*/
+	background-color:#F00;/*背景色*/
+	font-size:50px;
+}
+#weiyi{
+	background-color:#CCC;
+}
+*{/*通配符 所有的标记都会改变*/
+	color:red;
+}
+.class1{
+	color:#0F0;
+	background-color:#09C;
+}
+h2{
+	background-color:#0FF;
+}
+.box{
+	width:600px;
+	border:1px solid #0F0;
+	padding:20px;
+}
+.box a:link, .box a:visited{
+	color:#09F;
+	text-decoration:none;
+}/*link正常状态 hover放上去的状态 visited访问过的状态*/
+.box a:hover{
+	color:#000;
+	text-decoration:underline;
+}
+.box a.a1:link{
+	color:#3F0;
+	font-size:24px;
+}
+.box a.a1:hover{
+	color:#666;
+}
+.box a.a1:visited{
+	color:#F90;
+	}
+</style>
+</head>
+
+<body>
+<h1>这是个网页</h1>
+<p class="class1">这是一段</p>
+<h2 class="class1">这是第二段</h2>
+<hr />
+<p id="weiyi">我是唯一的</p>
+<hr />
+<h2>组合选择</h2>
+<div>是一样的吗？</div>
+<div class="box">
+  <a href="#">首页</a> |
+  <a href="http://ww.baidu.com" class="a1" target="_blank">简介</a> |
+  <a href="#">新闻</a> |
+  <a href="#">产品</a> |
+  <a href="#">浏览</a> |
+  <a href="#">建议</a> |
+  <a href="#">留言</a> |
+</div>
+</body>
+</html>
